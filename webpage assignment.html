@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title> Login page</title>
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/all.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,700">
+<style>
+
+body {
+	background: linear-gradient(90deg, #aee0f0, #6bb1cc);	
+}
+
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.screen {		
+	background: linear-gradient(90deg, #5491a4, #78aab8);		
+	position: relative;	
+	height: 600px;
+	width: 360px;	
+	box-shadow: 15px 10px 24px #568d96;
+}
+
+.login {
+	width: 320px;
+	padding: 30px;
+	padding-top: 156px;
+}
+
+.login__field {
+	padding: 20px 0px;	
+	position: relative;	
+}
+::placeholder{
+    color: #b7ccd1;
+}
+
+.login__icon {
+	position: absolute;
+	top: 30px;
+	color: #75a8b5;
+}
+
+.login__input {
+	border: none;
+	border-bottom: 2px solid #d1d3d4;
+	background: none;
+	padding: 10px;
+	padding-left: 24px;
+	font-weight: 700;
+	width: 75%;
+}
+
+
+.login__input:hover {
+	border-bottom-color: #678f9e;
+    transform: scale(1.05);
+}
+
+.login__submit{
+	background: #fff;
+	font-size: 14px;
+	margin-top: 30px;
+	padding: 16px 20px;
+	border-radius: 26px;
+	border: 1px solid #d3e0e8;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	width:300px;
+	color: #48979d;
+	box-shadow: 5px 7px 7px #568896;
+    transition: all 0.2s;
+}
+
+
+.login__submit:hover {
+	border-color: #67909e;
+    transform: scale(1.05);
+
+}
+
+
+
+.social-login {	
+	position: absolute;
+	height: 140px;
+	width: 160px;
+	text-align: center;
+	bottom: 0px;
+	right: 0px;
+	color: #fff;
+}
+
+.social-icons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.social-login__icon {
+	padding: 20px 10px;
+	color: #fff;
+	text-decoration: none;	
+	text-shadow: 0px 0px 8px #75a9b5;
+}
+
+.social-login__icon:hover {
+	transform: scale(1.5);
+    color:#aee0f0;	
+}
+.button .load{ 
+	display: none;
+	margin-left: 10px;
+}
+.button:focus .load{
+	display: block;
+	
+}
+
+
+</style>
+</head>
+<body>
+
+
+
+<div class="container">
+	<div class="screen">
+			<form class="login">
+				<div class="login__field">
+					<i class="login__icon fas fa-user"></i>
+					<input type="text" class="login__input" placeholder="User name">
+				</div>
+
+                <div class="login__field">
+					<i class="login__icon fa fa-envelope"></i>
+					<input type="email" class="login__input" placeholder="Email">
+				</div>
+
+				<div class="login__field">
+					<i class="login__icon fas fa-lock"></i>
+					<input type="password" class="login__input" placeholder="Password">
+				</div>
+				<button class="button login__submit">
+					<span class="button__text">Submit</span>
+                    <div class="load">waiting for network....<i class="fa fa-refresh fa-spin"></i></div>
+				</button>				
+			</form>
+			<div class="social-login">
+				<h3>log in via</h3>
+				<div class="social-icons">
+					<a href="#" class="social-login__icon fab fa-instagram"></a>
+					<a href="#" class="social-login__icon fab fa-facebook"></a>
+					<a href="#" class="social-login__icon fab fa-twitter"></a>
+				</div>
+			</div>
+	</div>
+</div>
+  
+</body>
+</html>
