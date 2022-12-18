@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop_down</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body {
+	        background: linear-gradient(90deg, #aee0f0, #6bb1cc);	
+        }
+        .header{
+            background-color: #6bb1cc;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .header ul{
+            display:inline-flex;
+            list-style: none;
+            color: aliceblue;
+        }
+        .header ul li{
+            width:120px;
+            margin: 15px;
+            padding: 15px;
+        }
+        .header ul li a{
+            text-decoration: none;
+            color: aliceblue;
+            
+        }
+
+        .header ul li:hover{
+            background-color: rgba(118, 206, 218, 0.845);
+        }
+
+        .header .fa{
+            margin: 8px;
+            color: azure;
+        }
+
+        .sub-menu1{
+            display: none;
+        }
+
+        .header ul li:hover .sub-menu1{
+            display: block;
+            position: absolute;
+            background-color: #6bb1cc;
+            margin-top: 15px;
+            margin-left: 15px;
+
+        }
+
+        .header ul li:hover .sub-menu1 ul{
+            display: block;
+            margin: 10px;
+        }
+        .header ul li:hover .sub-menu1 ul li{
+            width: 150px;
+            padding: 10px;
+            border-bottom: 1px dotted;
+            background: transparent;
+            border-radius: 0;
+            text-align: left;
+        }
+
+        .header ul li:hover .sub-menu1 ul li:last-child{
+            border-bottom: none;
+        }
+
+        .header ul li:hover .sub-menu1 ul li a:hover{
+            color: rgb(142, 237, 237);
+        }
+        .fa-angle-right{
+            margin-left: 15px;
+        }
+
+        .sub-menu2{
+            display: none;
+        }
+
+        .hover:hover .sub-menu2{
+            display: block;
+            position: absolute;
+            margin-top: -40px;
+            margin-left: 140px;
+            background-color: #6bb1cc;
+        }
+
+
+
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="website">
+        <nav class="header">
+            <ul>
+                <li><a href="#">Home</a><i class="fa fa-home"></i></li>
+                <li><a href="#">About Us</a><i class="fa fa-user"></i>
+                <div class="sub-menu1">
+                    <ul>
+                        <li><a href="#">Mission</a></li>
+                        <li><a href="#">Vision</a></li>
+                        <li><a href="#">Team</a></li>
+                    </ul>
+                </div>
+                </li>
+                <li><a href="#">Services</a><i class="fa fa-clone"></i>
+                    <div class="sub-menu1">
+                        <ul>
+                            <li><a href="#">Web Desiging</a></i></li>
+                            <li><a href="#">Marketing</a></li>
+                            <li class="hover"><a href="#">Mobile App</a><i class="fa fa-angle-right"></i>
+                            
+                                <div class="sub-menu2">
+                                    <ul>
+                                        <li><a href="#">Android App</a><i class="fa fa-android"></i></li>
+                                        <li><a href="#">Ios App</a><i class="fa fa-apple"></i></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Clients</a><i class="fa fa-users"></i></li>
+                <li class="contact"><a href="#">Contact</a><i class="fa fa-phone"></i>
+                    <div class="sub-menu1">
+                        <ul>
+                            <li class="hover"><a href="#">Contact Number</a><i class="fa fa-phone"></i>
+                            <p class="sub-menu2">+91 7288068102</p>
+                            </li>
+                            <li class="hover"><a href="#">Email</a><i class="fa fa-envelope"></i>
+                                <p class="sub-menu2">vamsikrishnakollipara1234@gmail.com</p>
+                            </li>
+                            <li><a target=_blank href="https://twitter.com/">Twitter</a><i class="fa fa-twitter"></i></li>
+                            <li><a target=_blank href="https://instagram.com/">Instagram</a><i class="fa fa-instagram"></i></li>
+                            <li><a target=_blank href="https://facebook.com/">Facebook</a><i class="fa fa-facebook"></i></li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Investers</a><i class="fa fa-angellist"></i></li>
+                <li><a href="#">Pricing</a><i class="fa fa-inr"></i></li>
+            </ul>
+
+        </nav>
+    </div>
+</body>
+</html>
